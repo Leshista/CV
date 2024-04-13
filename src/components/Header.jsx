@@ -14,7 +14,7 @@ const Header = () => {
         <header className={classes.header}>
             <div className={classes.nameTyping}></div>
             <nav className={classes.nav}>
-                <NavLink to='/' className={classes.nav__item}>{ textProvider('aboutMe') }</NavLink>
+                <NavLink to='/CV/' className={classes.nav__item}>{ textProvider('aboutMe') }</NavLink>
                 <NavLink to='portfolio' className={classes.nav__item}>{ textProvider('portfolio') }</NavLink>
                 <NavLink to='courses' className={classes.nav__item}>{ textProvider('courses') }</NavLink>
             </nav>

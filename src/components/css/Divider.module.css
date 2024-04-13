@@ -1,0 +1,33 @@
+.dividerTop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+.grey {
+    fill: #23282e;
+}
+
+.dividerBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+svg {
+    position: relative;
+    display: block;
+    margin-top: 7rem;
+    width: calc(115% + 1.3px);
+    height: 150px;
+}

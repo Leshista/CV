@@ -1,0 +1,72 @@
+.footer {
+    min-height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    line-height: 4.5rem;
+    padding: 0 20vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    min-height: 15rem;
+    position: relative;
+    bottom: 0;
+}
+
+.footer .arrow-up {
+    position: absolute;
+    top: -7rem;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.footer .arrow-up:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.footer .email {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer .links {
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+.footer .links img {
+    max-width: 5rem;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.footer .links img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+    .footer .email {
+        font-size: 24px;
+    }
+}

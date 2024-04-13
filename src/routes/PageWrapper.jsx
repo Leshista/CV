@@ -1,11 +1,14 @@
 import { Outlet } from "react-router"
-import Footer from "../components/Footer";
+
 import Header from "../components/Header";
+import Divider from "../components/Divider";
+import Footer from "../components/Footer";
 
 const PageWrapper = () => {
     return (
         <>
-            <Header/>
+            <Header />
+            <Divider dividerType='top' dividerNumber={1} />
             <Outlet />
             <Footer/>
         </>

@@ -1,0 +1,331 @@
+.header {
+    min-height: 5rem;
+    background-color: #23282e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.nameTyping {
+    width: 25vw;
+    font-family: 'Cutive Mono', monospace;
+    padding: 3rem;
+    font-size: 3.8rem;
+}
+
+.nameTyping::before {
+    content: 'Aleshin Stanislav';
+    -webkit-animation: typing 4s ease-in 2s infinite alternate;
+    animation: typing 4s ease-in 2s infinite alternate;
+}
+
+.nav {
+    width: 65vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav__item {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 3.8rem;
+}
+.burger {
+    position: fixed;
+    display: none;
+    padding: 2.5rem;
+    z-index: 100;
+    right: 0;
+}
+
+.burger__stripe {
+    background-color: #32d08c;
+    width: 4rem;
+    height: 0.7rem;
+    margin-bottom: 0.7rem;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+@-webkit-keyframes typing {
+    from {
+        content: 'Aleshin Stanislav|';
+    }
+
+    3.125% {
+        content: 'Aleshin Stanisla|';
+    }
+
+    6.25% {
+        content: 'Aleshin Stanisl|';
+    }
+
+    9.375% {
+        content: 'Aleshin Stanis|';
+    }
+
+    12.5% {
+        content: 'Aleshin Stani|';
+    }
+
+    15.625% {
+        content: 'Aleshin Stan|';
+    }
+
+    18.75% {
+        content: 'Aleshin Sta|';
+    }
+
+    21.875% {
+        content: 'Aleshin St|a';
+    }
+
+    25% {
+        content: 'Aleshin S|ta';
+    }
+
+    28.125% {
+        content: 'Aleshin |ta';
+    }
+
+    31.25% {
+        content: 'Aleshin |sta';
+    }
+
+    34.375% {
+        content: 'Aleshin| sta';
+    }
+
+    37.5% {
+        content: 'Aleshi| sta';
+    }
+
+    40.625% {
+        content: 'Alesh|i sta';
+    }
+
+    43.75% {
+        content: 'Ales|hi sta';
+    }
+
+    46.875% {
+        content: 'Ale|shi sta';
+    }
+
+    50% {
+        content: 'Al|eshi sta';
+    }
+
+    53.125% {
+        content: 'A|eshi sta';
+    }
+
+    56.25% {
+        content: '|eshi sta';
+    }
+
+    59.375% {
+        content: 'L|eshi sta';
+    }
+
+    62.5% {
+        content: 'Le|shi sta';
+    }
+
+    65.625% {
+        content: 'Les|hi sta';
+    }
+
+    68.75% {
+        content: 'Lesh|i sta';
+    }
+
+    71.875% {
+        content: 'Leshi| sta';
+    }
+
+    75% {
+        content: 'Leshi |sta';
+    }
+
+    78.125% {
+        content: 'Leshista';
+    }
+
+    81.25% {
+        content: '<Leshista';
+    }
+
+    84.375% {
+        content: '<Leshista>';
+    }
+
+    87.5% {
+        content: '<Leshista/>';
+    }
+
+    to {
+        content: '<Leshista/>';
+        color: #32d08c;
+    }
+}
+
+@keyframes typing {
+    from {
+        content: 'Aleshin Stanislav|';
+    }
+
+    3.125% {
+        content: 'Aleshin Stanisla|';
+    }
+
+    6.25% {
+        content: 'Aleshin Stanisl|';
+    }
+
+    9.375% {
+        content: 'Aleshin Stanis|';
+    }
+
+    12.5% {
+        content: 'Aleshin Stani|';
+    }
+
+    15.625% {
+        content: 'Aleshin Stan|';
+    }
+
+    18.75% {
+        content: 'Aleshin Sta|';
+    }
+
+    21.875% {
+        content: 'Aleshin St|a';
+    }
+
+    25% {
+        content: 'Aleshin S|ta';
+    }
+
+    28.125% {
+        content: 'Aleshin |ta';
+    }
+
+    31.25% {
+        content: 'Aleshin |sta';
+    }
+
+    34.375% {
+        content: 'Aleshin| sta';
+    }
+
+    37.5% {
+        content: 'Aleshi| sta';
+    }
+
+    40.625% {
+        content: 'Alesh|i sta';
+    }
+
+    43.75% {
+        content: 'Ales|hi sta';
+    }
+
+    46.875% {
+        content: 'Ale|shi sta';
+    }
+
+    50% {
+        content: 'Al|eshi sta';
+    }
+
+    53.125% {
+        content: 'A|eshi sta';
+    }
+
+    56.25% {
+        content: '|eshi sta';
+    }
+
+    59.375% {
+        content: 'L|eshi sta';
+    }
+
+    62.5% {
+        content: 'Le|shi sta';
+    }
+
+    65.625% {
+        content: 'Les|hi sta';
+    }
+
+    68.75% {
+        content: 'Lesh|i sta';
+    }
+
+    71.875% {
+        content: 'Leshi| sta';
+    }
+
+    75% {
+        content: 'Leshi |sta';
+    }
+
+    78.125% {
+        content: 'Leshista';
+    }
+
+    81.25% {
+        content: '<Leshista';
+    }
+
+    84.375% {
+        content: '<Leshista>';
+    }
+
+    87.5% {
+        content: '<Leshista/>';
+    }
+
+    to {
+        content: '<Leshista/>';
+        color: #32d08c;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+    .header {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .header .nameTyping {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .header .burger {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .header .nameTyping {
+        font-size: 2.2rem;
+    }
+}

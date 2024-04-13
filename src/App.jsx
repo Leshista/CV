@@ -8,7 +8,7 @@ import Courses from './routes/Courses'
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/CV', element: <PageWrapper />, children:
+      path: '/', element: <PageWrapper />, children:
         [
           {index: true, element: <Experience/>},
           {path: 'portfolio', element: <Portfolio />},

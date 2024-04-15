@@ -8,7 +8,7 @@ export const textEn = {
     // Experience section
 
     // Right side
-    name: 'Stanislav Aleshin',
+    name: 'Stanislav Alyoshin',
     profession: 'Front-End Developer',
 
     myExperience:
@@ -64,6 +64,7 @@ export const textEn = {
     scss: 'SASS(SCSS)',
     bootstrap: 'Bootstrap 5',
     bem: 'BEM',
+    jquery: 'JQuery',
     js: 'JavaScript ES 6',
     ts: 'TypeScript',
     react: 'React',
@@ -148,6 +149,7 @@ export const textRu = {
     scss: 'SASS(SCSS)',
     bootstrap: 'Bootstrap 5',
     bem: 'BEM',
+    jquery: 'JQuery',
     js: 'JavaScript ES 6',
     ts: 'TypeScript',
     react: 'React',

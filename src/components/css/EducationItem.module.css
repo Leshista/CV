@@ -1,0 +1,27 @@
+.educationItem {
+    margin: 2rem 0 3rem 0;
+}
+.educationItem__title {
+    color: #385f71;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.educationItem__years {
+    color: #8f754f;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+.educationItem__profession {
+    color: #8f754f;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .educationItem__title {
+        font-size: 2.5rem;
+    }
+}

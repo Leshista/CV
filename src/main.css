@@ -142,8 +142,8 @@ html {
 a {
     color: inherit;
     text-decoration: none;
-    -webkit-transition-property: color;
-    transition-property: color;
+    -webkit-transition-property: all;
+    transition-property: all;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
 }

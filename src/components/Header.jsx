@@ -14,9 +14,9 @@ const Header = () => {
         <header className={classes.header}>
             <div className={classes.nameTyping}></div>
             <nav className={classes.nav}>
-                <NavLink to='/CV/' className={classes.nav__item}>{ textProvider('aboutMe') }</NavLink>
-                <NavLink to='portfolio' className={classes.nav__item}>{ textProvider('portfolio') }</NavLink>
-                <NavLink to='courses' className={classes.nav__item}>{ textProvider('courses') }</NavLink>
+                <NavLink to='/CV/' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item} end>{ textProvider('aboutMe') }</NavLink>
+                <NavLink to='portfolio' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('portfolio') }</NavLink>
+                <NavLink to='courses' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('courses') }</NavLink>
             </nav>
             <button onClick={languageToRuHandler}>Ru</button>
             <button onClick={languageToEnHandler}>En</button>

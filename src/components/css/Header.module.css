@@ -36,6 +36,11 @@
     font-family: 'Cutive Mono', monospace;
     font-size: 3.8rem;
 }
+.nav__item_active {
+    font-family: 'Cutive Mono', monospace;
+    color: #32d08c;
+    font-size: 3.8rem;
+}
 .burger {
     position: fixed;
     display: none;

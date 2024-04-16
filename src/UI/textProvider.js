@@ -74,8 +74,8 @@ const textEn = {
     },
 
     education2: {
-        education2Name: 'Rostov Institute of National Economy',
-        education2Profession: 'Japanese Orientalist, did not finish',
+        name: 'Rostov Institute of National Economy',
+        profession: 'Japanese Orientalist, did not finish',
     },
 
     // Left Side

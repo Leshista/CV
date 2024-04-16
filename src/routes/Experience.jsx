@@ -5,6 +5,7 @@ import WorkItem from '../components/WorkItem';
 import EducationItem from '../components/EducationItem';
 
 const Experience = () => {
+
     return (
         <article className={classes.experienceWrapper}>
             <aside className={classes.leftSide}>
@@ -49,16 +50,16 @@ const Experience = () => {
                 </section>
                 <section className={classes.workExperience}>
                     <h2 className={classes.rightSide__title}>{ textProvider('wasWorkingAs') + ':' }</h2>
-                    <WorkItem workName={textProvider('job1Name')} workYears='2022-2024' workReq1={textProvider('job1Requirment1')} workReq2={textProvider('job1Requirment2')} workReq3={textProvider('job1Requirment3')} workReq4={textProvider('job1Requirment4')}/>
-                    <WorkItem workName={textProvider('job2Name')} workYears='2020-2022' workReq1={textProvider('job2Requirment1')} workReq2={textProvider('job2Requirment2')} workReq3={textProvider('job2Requirment3')}/>
-                    <WorkItem workName={textProvider('job4Name')} workYears='2021' workReq1={textProvider('job4Requirment1')} workReq2={textProvider('job4Requirment2')} workReq3={textProvider('job4Requirment3')} workReq4={textProvider('job4Requirment4')}/>
-                    <WorkItem workName={textProvider('job3Name')} workYears='2020' workReq1={textProvider('job3Requirment1')} workReq2={textProvider('job3Requirment2')} workReq3={textProvider('job3Requirment3')} workReq4={textProvider('job3Requirment4')}/>
-                    <WorkItem workName={textProvider('job5Name')} workYears='2017-2022' workReq1={textProvider('job5Requirment1')} workReq2={textProvider('job5Requirment2')} workReq3={textProvider('job5Requirment3')} workReq4={textProvider('job5Requirment4')}/>
+                    <WorkItem workName={textProvider('job1')['name']} workYears='2022-2024' workReqs={textProvider('job1')['requirements']} />
+                    <WorkItem workName={textProvider('job2')['name']} workYears='2020-2022' workReqs={textProvider('job2')['requirements']}/>
+                    <WorkItem workName={textProvider('job4')['name']} workYears='2021' workReqs={textProvider('job4')['requirements']}/>
+                    <WorkItem workName={textProvider('job3')['name']} workYears='2020' workReqs={textProvider('job3')['requirements']}/>
+                    <WorkItem workName={textProvider('job5')['name']} workYears='2017-2022' workReqs={textProvider('job5')['requirements']}/>
                 </section>
                 <section className={classes.education}>
                     <h2 className={classes.rightSide__title}>{ textProvider('education') + ':' }</h2>
-                    <EducationItem educTitle={textProvider('education1Name')} educYears='2016-2019' educProfession={textProvider('education1Profession')}/>
-                    <EducationItem educTitle={textProvider('education2Name')} educYears='2019-2020' educProfession={textProvider('education2Profession')}/>
+                    <EducationItem educTitle={textProvider('education1')['name']} educYears='2016-2019' educProfession={textProvider('education1')['profession']}/>
+                    <EducationItem educTitle={textProvider('education2')['name']} educYears='2019-2020' educProfession={textProvider('education2')['profession']}/>
                 </section>
             </main>
         </article>

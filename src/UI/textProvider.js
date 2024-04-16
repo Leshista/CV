@@ -17,44 +17,66 @@ const textEn = {
     wasWorkingAs: 'I was working as',
     jobRequirments: 'This job required me to do the following:',
 
-    job1Name: 'Lucky Group Layout Developer',
-    job1Requirment1: "To read, fix and improve other people's code",
-    job1Requirment2: 'To solve unusual problems from scratch',
-    job1Requirment3: 'To use in Jira and Confluence systems',
-    job1Requirment4:
-        'To work in a team with QA-engineers, content managers and other layout developers',
+    job1: {
+        name: 'Lucky Group Layout Developer',
+        requirements: [
+            "To read, fix and improve other people's code",
+            'To solve unusual problems from scratch',
+            'To use in Jira and Confluence systems',
+            'To work in a team with QA-engineers, content managers and other layout developers',
+        ],
+    },
 
-    job2Name: 'Delivery Club Foot Courier',
-    job2Requirment1: 'To walk a lot',
-    job2Requirment2: 'To accept and deliver food',
-    job2Requirment3: 'To learn the pathways of the city of Rostov-on-Don',
+    job2: {
+        name: 'Delivery Club Foot Courier',
+        requirements: [
+            'To walk a lot',
+            'To accept and deliver food',
+            'To learn the pathways of the city of Rostov-on-Don',
+        ],
+    },
 
-    job3Name: 'Hobby Games Shop Seller',
-    job3Requirment1: 'To help customers pick what boardgame to buy',
-    job3Requirment2: 'To sell and deliver boardgames',
-    job3Requirment3: 'To use business automation software 1C:Enterprise',
-    job3Requirment4: 'To accept, sort and keep track of incoming boardgames',
+    job3: {
+        name: 'Hobby Games Shop Seller',
+        requirements: [
+            'To help customers pick what boardgame to buy',
+            'To sell and deliver boardgames',
+            'To use business automation software 1C:Enterprise',
+            'To accept, sort and keep track of incoming boardgames',
+        ],
+    },
 
-    job4Name: 'OZON Call-Center Worker',
-    job4Requirment1: 'To help customers with troubles',
-    job4Requirment2:
-        'To learn and keep track of ever-increasing amount of info',
-    job4Requirment3: 'To use Jira and Confluence',
-    job4Requirment4: 'To mentor new members of the team',
+    job4: {
+        name: 'OZON Call-Center Worker',
+        requirements: [
+            'To help customers with troubles',
+            'To learn and keep track of ever-increasing amount of info',
+            'To use Jira and Confluence',
+            'To mentor new members of the team',
+        ],
+    },
 
-    job5Name: 'English Tutor',
-    job5Requirment1: 'To help kids to improve their English vocabulary',
-    job5Requirment2: 'To teach children English grammar',
-    job5Requirment3: 'To prepare pupils for school exams',
-    job5Requirment4: 'To help kids with doing their homework',
+    job5: {
+        name: 'English Tutor',
+        requirements: [
+            'To help kids to improve their English vocabulary',
+            'To teach children English grammar',
+            'To prepare pupils for school exams',
+            'To help kids with doing their homework',
+        ],
+    },
 
     education: 'Education',
 
-    education1Name: 'Kostroma State University',
-    education1Profession: 'Tourism Specialist',
+    education1: {
+        name: 'Kostroma State University',
+        profession: 'Tourism Specialist',
+    },
 
-    education2Name: 'Rostov Institute of National Economy',
-    education2Profession: 'Japanese Orientalist, did not finish',
+    education2: {
+        education2Name: 'Rostov Institute of National Economy',
+        education2Profession: 'Japanese Orientalist, did not finish',
+    },
 
     // Left Side
     hardSkills: 'Hard Skills',
@@ -104,45 +126,66 @@ const textRu = {
     wasWorkingAs: 'Прошлые места работы',
     jobRequirments: 'На этом месте я делал следующее:',
 
-    job1Name: 'Lucky Group Верстальщик',
-    job1Requirment1: 'Читал, правил и улучшал чужой код',
-    job1Requirment2: 'Решал нестандартные задачи с нуля',
-    job1Requirment3: 'Использовал Jira и Confluence',
-    job1Requirment4:
-        'Работал в команде с верстальщиками, тестировщиками и контент-менеджерами',
+    job1: {
+        name: 'Lucky Group Верстальщик',
+        requirements: [
+            'Читал, правил и улучшал чужой код',
+            'Решал нестандартные задачи с нуля',
+            'Использовал Jira и Confluence',
+            'Работал в команде с верстальщиками, тестировщиками и контент-менеджерами',
+        ],
+    },
 
-    job2Name: 'Delivery Club Пеший Курьер',
-    job2Requirment1: 'Много ходил',
-    job2Requirment2: 'Принимал и доставлял еду',
-    job2Requirment3: 'Изучал улицы города Ростова-на-Дону',
+    job2: {
+        name: 'Delivery Club Пеший Курьер',
+        requirements: [
+            'Много ходил',
+            'Принимал и доставлял еду',
+            'Изучал улицы города Ростова-на-Дону',
+        ],
+    },
 
-    job3Name: 'Hobby Games Продавец Настольных Игр',
-    job3Requirment1: 'Помогал покупателям в выборе игр',
-    job3Requirment2: 'Продавал и доставлял настольных игр ',
-    job3Requirment3: 'Работал в программе 1С:Предприятие',
-    job3Requirment4: 'Принимал, сортировал и вёл учёт поступающих товаров',
+    job3: {
+        name: 'Hobby Games Продавец Настольных Игр',
+        requirements: [
+            'Помогал покупателям в выборе игр',
+            'Продавал и доставлял настольных игр',
+            'Работал в программе 1С:Предприятие',
+            'Принимал, сортировал и вёл учёт поступающих товаров',
+        ],
+    },
 
-    job4Name: 'OZON Работник Call-Центра',
-    job4Requirment1: 'Помогал клиентам с возникающими трудностями',
-    job4Requirment2:
-        'Учил и пользовался постоянно увеличивающейся рабочей информацией',
-    job4Requirment3: 'Использовал Jira и Confluence',
-    job4Requirment4: 'Помогал с адаптацией новых членов команды',
+    job4: {
+        name: 'OZON Работник Call-Центра',
+        requirements: [
+            'Помогал клиентам с возникающими трудностями',
+            'Учил и пользовался постоянно увеличивающейся рабочей информацией',
+            'Использовал Jira и Confluence',
+            'Помогал с адаптацией новых членов команды',
+        ],
+    },
 
-    job5Name: 'Репетитор Английского Языка',
-    job5Requirment1: 'Помогал детям увеличивать словарный запас',
-    job5Requirment2: 'Объяснял грамматику английского языка',
-    job5Requirment3: 'Готовил учеников к школьным экзаменам',
-    job5Requirment4: 'Помогал детям с решением домашнего задания',
+    job5: {
+        name: 'Репетитор Английского Языка',
+        requirements: [
+            'Помогал детям увеличивать словарный запас',
+            'Объяснял грамматику английского языка',
+            'Готовил учеников к школьным экзаменам',
+            'Помогал детям с решением домашнего задания',
+        ],
+    },
 
     education: 'Образование',
 
-    education1Name: 'Костромской Государственный Университет',
-    education1Profession: 'СПО по программе "Специалист по Туризму"',
+    education1: {
+        name: 'Костромской Государственный Университет',
+        profession: 'СПО по программе "Специалист по Туризму"',
+    },
 
-    education2Name: 'Ростовский Институт Народного Хозяйства',
-    education2Profession:
-        'Высшее по программе "Востоковед. Япония". Не окончено',
+    education2: {
+        name: 'Ростовский Институт Народного Хозяйства',
+        profession: 'Высшее по программе "Востоковед. Япония". Не окончено',
+    },
 
     // Left Side
     hardSkills: 'Hard Skills',

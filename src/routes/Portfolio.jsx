@@ -12,6 +12,12 @@ const Portfolio = () => {
                 <h1 className={classes.portfolioTitle}>{ textProvider('myProjects') }</h1>
                 <section className={classes.projectList}>
                     <ProjectItem projectId={1} />
+                    <ProjectItem projectId={2} />
+                    <ProjectItem projectId={3} />
+                    <ProjectItem projectId={4} />
+                    <ProjectItem projectId={5} />
+                    <ProjectItem projectId={6} />
+                    <ProjectItem projectId={7} />
                 </section>
                 <Divider dividerType='bottom' dividerNumber={3}/>
             </article>

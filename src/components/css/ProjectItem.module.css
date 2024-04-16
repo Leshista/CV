@@ -1,0 +1,12 @@
+.project__Wrapper {
+    padding: 3rem;
+    border: 2rem solid rgba(0, 0, 0, 0.5);
+}
+.project__Title {
+    font-size: 5rem;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.project__Title:hover {
+    color: #8f754f;
+}

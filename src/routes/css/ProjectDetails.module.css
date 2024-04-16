@@ -1,12 +1,27 @@
 .projectDetails__Backdrop {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 .projectDetails__Wrapper {
     font-size: 3rem;
+    width: 50vw;
+    position: fixed;
+    top: 30vh;
 }
 .projectDetails__close {
+    display: block;
+    font-size: 5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+@media (max-width: 576px) {
+    .projectDetails__Wrapper {
+        top: 15vh;
+    }
 }

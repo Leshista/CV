@@ -8,7 +8,7 @@ const textEn = {
     // Experience section
 
     // Right side
-    name: 'Stanislav Alyoshin',
+    name: 'Stanislav Aleshin',
     profession: 'Front-End Developer',
 
     myExperience:

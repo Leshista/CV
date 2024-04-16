@@ -11,10 +11,13 @@
 .grey {
     fill: #23282e;
 }
+.aquamarine {
+    fill: #32d08c;
+}
 
 .dividerBottom {
     position: absolute;
-    bottom: 0;
+    bottom: -16rem;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -22,6 +25,19 @@
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     z-index: -1;
+}
+
+.dividerUpsideDown {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 svg {

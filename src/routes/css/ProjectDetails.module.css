@@ -1,0 +1,12 @@
+.projectDetails__Backdrop {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.projectDetails__Wrapper {
+    font-size: 3rem;
+}
+.projectDetails__close {
+}

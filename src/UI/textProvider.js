@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 
-export const textEn = {
+const textEn = {
     aboutMe: 'About me',
     portfolio: 'Portfolio',
     courses: 'Courses',
@@ -82,9 +82,12 @@ export const textEn = {
     highlyMotivated: 'Highly motivated',
     teamWorker: 'Team worker',
     sociable: 'Sociable',
+
+    // Portfolio Section
+    myProjects: 'My Projects',
 };
 
-export const textRu = {
+const textRu = {
     aboutMe: 'Обо мне',
     portfolio: 'Портфолио',
     courses: 'Курсы',
@@ -167,6 +170,9 @@ export const textRu = {
     highlyMotivated: 'Высоко замотивирован',
     teamWorker: 'Командный игрок',
     sociable: 'Общительный',
+
+    // Секция "Портфолио"
+    myProjects: 'Мои проекты',
 };
 
 const textProvider = (text) => {

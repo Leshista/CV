@@ -9,7 +9,7 @@ const WorkItem = ({ workName, workYears, workReqs }) => {
             <p className={classes.workItem__years}>{workYears}</p>
             <p className={classes.workItem__subtitle}>{ textProvider('jobRequirments') }</p>
             <ul className={classes.workItem__list}>
-                {workReqs.map(req => <li className={classes.workItem__item}>{req}</li>)}
+                {workReqs.map(req => <li className={classes.workItem__item} key={workReqs.indexOf(req)}>{req}</li>)}
             </ul>
         </div>
     )

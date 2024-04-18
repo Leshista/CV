@@ -1,5 +1,12 @@
 .portfolio__Wrapper {
-    background-color: #32d08c;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(#0a2c1d),
+        to(#32d08c)
+    );
+    background: linear-gradient(0deg, #0a2c1d, #32d08c);
     margin: 25rem 0;
     font-size: 3rem;
 }

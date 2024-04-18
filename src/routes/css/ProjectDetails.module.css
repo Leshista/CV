@@ -24,7 +24,6 @@
     border-color: #32d08c;
     color: #fff;
     z-index: 2;
-    box-shadow: 1px 1px 50px #32d08c;
 }
 .projectDetails__List {
     list-style: decimal;
@@ -44,6 +43,9 @@
     transition-property: all;
     transition-duration: 500ms;
     border-radius: 0.5rem;
+}
+.project__Techs {
+    margin: 1.5rem 4rem;
 }
 .projectDetails__Image:hover {
     box-shadow: 1px 1px 50px #32d08c;

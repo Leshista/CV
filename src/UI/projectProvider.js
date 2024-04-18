@@ -13,7 +13,7 @@ const projectsEn = {
         title: 'Curriculum Vitae SPA',
         image: CVImage,
         subtitle: 'Includes resume, portfolio, recommendation letter etc.',
-        techs: 'HTML, CSS, JS, React, React-router, Redux, Redux-ToolKit',
+        techs: 'HTML, CSS, JS, React, React-Router, Redux, Redux-ToolKit',
         features: [
             'Client-side routing provides multi-page UX without page reloading',
             'Redux provides real-time language change',
@@ -120,7 +120,7 @@ const projectsRu = {
         image: CVImage,
         subtitle:
             'Включает в себя резюме, портфолио, рекомендательное письмо и прочее',
-        techs: 'HTML, CSS, JS, React, React-router, Redux, Redux-ToolKit',
+        techs: 'HTML, CSS, JS, React, React-Router, Redux, Redux-ToolKit',
         features: [
             'Роутинг на стороне клиента предоставляет многостраничный UX без перезагрузки страницы',
             'При помощи Redux осуществлена смена языка в реальном времени',

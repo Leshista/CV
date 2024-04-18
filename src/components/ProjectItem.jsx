@@ -3,8 +3,6 @@ import classes from './css/ProjectItem.module.css'
 import projectProvider from '../UI/projectProvider';
 
 const ProjectItem = ({ projectId }) => {
-    const image = projectProvider(projectId, 'image')
-    console.log(image)
     return (
         <Link to={`${projectId}`}><div className={classes.project__Wrapper}>
             <h2 className={classes.project__Title}>{projectProvider(projectId, 'title')}</h2>

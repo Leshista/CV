@@ -107,6 +107,7 @@ const textEn = {
 
     // Portfolio Section
     myProjects: 'My Projects',
+    techsUsed: 'Techs Used',
 };
 
 const textRu = {
@@ -216,6 +217,7 @@ const textRu = {
 
     // Секция "Портфолио"
     myProjects: 'Мои проекты',
+    techsUsed: 'Технологии',
 };
 
 const textProvider = (text) => {

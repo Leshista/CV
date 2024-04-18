@@ -138,6 +138,7 @@ table {
 html {
     font-size: 10px;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 a {
     color: inherit;
@@ -149,4 +150,6 @@ a {
 }
 a:hover {
     color: #32d08c;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }

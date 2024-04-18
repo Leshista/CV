@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 import { langActions } from '../store/lang';
 import textProvider from '../UI/textProvider';
 import classes from './css/Header.module.css'
+import flagEN from './images/en.png'
+import flagRU from './images/ru.png'
 
 const Header = () => {
     const dispatch = useDispatch()
@@ -18,8 +20,10 @@ const Header = () => {
                 <NavLink to='portfolio' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('portfolio') }</NavLink>
                 <NavLink to='courses' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('courses') }</NavLink>
             </nav>
-            <button onClick={languageToRuHandler}>Ru</button>
-            <button onClick={languageToEnHandler}>En</button>
+            <div className={classes.languageSwitcher__Wrapper}>
+            <img src={flagRU} className={classes.languageSwitcher} onClick={languageToRuHandler}></img>
+            <img src={flagEN} className={classes.languageSwitcher} onClick={languageToEnHandler}></img>
+            </div>
             <div className={classes.burger}>
                 <div className={classes.burger__stripe}></div>
                 <div className={classes.burger__stripe}></div>

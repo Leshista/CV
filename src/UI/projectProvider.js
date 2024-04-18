@@ -1,9 +1,17 @@
 import { useSelector } from 'react-redux';
 
+import CVImage from './images/CV.jpg';
+import ComfyJournalImage from './images/ComfyJournal.jpg';
+import ToDoListImage from './images/ToDoList.jpg';
+import LoremIpsumImage from './images/LoremIpsum.jpg';
+import CNNImage from './images/CNN.jpg';
+import IndexPageImage from './images/IndexPage.jpg';
+import QuestImage from './images/Quest.jpg';
+
 const projectsEn = {
-    1: {
+    CV: {
         title: 'Curriculum Vitae SPA',
-        image: null,
+        image: CVImage,
         subtitle: 'Includes resume, portfolio, recommendation letter etc.',
         techs: 'HTML, CSS, JS, React, React-router, Redux, Redux-ToolKit',
         features: [
@@ -11,11 +19,14 @@ const projectsEn = {
             'Redux provides real-time language change',
             'CSS animation provides a nice little typing animation',
             'There are smooth SVG curves in the design',
+            'A little easter egg is hidden out there somewhere (:',
         ],
+        github: 'https://github.com/Leshista/CV',
+        githubPages: 'https://leshista.github.io/CV/',
     },
-    2: {
+    ComfyJournal: {
         title: 'Comfy Journal',
-        image: null,
+        image: ComfyJournalImage,
         subtitle:
             'A simple ToDo app, where user can add, delete, edit and filter tasks',
         techs: 'HTML, CSS, SCSS, JS, TS, React',
@@ -25,10 +36,12 @@ const projectsEn = {
             'After creating multiple tasks user can find the one needed by using implemented task filter',
             'Tasks can have multiple states, such as: yet to be done, in progress and done',
         ],
+        github: 'https://github.com/Leshista/infotecs-test',
+        githubPages: 'https://leshista.github.io/infotecs-test/',
     },
-    3: {
+    ToDoList: {
         title: 'To Do List',
-        image: null,
+        image: ToDoListImage,
         subtitle:
             'A simpler ToDo app, where user can add, delete and filter tasks',
         techs: 'HTML, CSS, SCSS, JS, TS, React',
@@ -38,10 +51,12 @@ const projectsEn = {
             'After creating multiple tasks user can find the one needed by using implemented task filter',
             'Tasks can have two states: yet to be done and done',
         ],
+        github: 'https://github.com/Leshista/ReactToDoList',
+        githubPages: 'https://leshista.github.io/ReactToDoList/',
     },
-    4: {
+    'LoremIpsum.net': {
         title: 'LoremIpsum.net',
-        image: null,
+        image: LoremIpsumImage,
         subtitle: 'A test land for applying for Layout Developer job',
         techs: 'HTML, CSS, JS, Figma',
         features: [
@@ -49,10 +64,12 @@ const projectsEn = {
             'Custom inputs in the form: <select/>, <range/> <input type="file"/>',
             'Working anchor links leading to the form',
         ],
+        github: 'https://github.com/Leshista/loremIpsum.net',
+        githubPages: 'https://leshista.github.io/loremIpsum.net/',
     },
-    5: {
+    CNN: {
         title: 'Static CNN Main Page Snapshot',
-        image: null,
+        image: CNNImage,
         subtitle:
             'A rather complex page made with help of HTML/CSS/JS tutorial',
         techs: 'HTML, CSS, JS, SCSS, BootStrap, PhotoShop',
@@ -62,10 +79,12 @@ const projectsEn = {
             'Functioning (but emply) language selectors and searchbar',
             'Works as intended only on desktop resolutions',
         ],
+        github: 'https://github.com/Leshista/CNNStaticCopy/',
+        githubPages: 'https://leshista.github.io/CNNStaticCopy/',
     },
-    6: {
+    IndexPage: {
         title: 'Index Page of a Blog',
-        image: null,
+        image: IndexPageImage,
         subtitle: 'A simple yet pretty index page',
         techs: 'HTML, CSS, PhotoShop',
         features: [
@@ -73,10 +92,12 @@ const projectsEn = {
             'A mocup calendar made as a table is nice',
             'Hover effects on links bring a little bit of life to site',
         ],
+        github: 'https://github.com/Leshista/FlexBoxSite/',
+        githubPages: 'https://leshista.github.io/FlexBoxSite/',
     },
-    7: {
+    Quest: {
         title: 'A Quest for Glory',
-        image: null,
+        image: QuestImage,
         subtitle: 'Unfinished yet charming little game',
         techs: 'HTML, CSS, JS, SCSS, PhotoPea',
         features: [
@@ -88,13 +109,15 @@ const projectsEn = {
             'Hero can walk by clicking on a tile or by wasd/arrow keys',
             'You can defeat enemies by clicking on them & earn gold for it',
         ],
+        github: 'https://github.com/Leshista/JSGame/',
+        githubPages: 'https://leshista.github.io/JSGame/',
     },
 };
 
 const projectsRu = {
-    1: {
+    CV: {
         title: 'Curriculum Vitae SPA',
-        image: null,
+        image: CVImage,
         subtitle:
             'Включает в себя резюме, портфолио, рекомендательное письмо и прочее',
         techs: 'HTML, CSS, JS, React, React-router, Redux, Redux-ToolKit',
@@ -103,11 +126,14 @@ const projectsRu = {
             'При помощи Redux осуществлена смена языка в реальном времени',
             'Реализована CSS анимация с эффектом печатания',
             'В дизайне использованы SVG элементы',
+            'Где-то здесь прячется пасхалка (:',
         ],
+        github: 'https://github.com/Leshista/CV',
+        githubPages: 'https://leshista.github.io/CV/',
     },
-    2: {
+    ComfyJournal: {
         title: 'Comfy Journal',
-        image: null,
+        image: ComfyJournalImage,
         subtitle:
             'Небольшое ToDo приложение, в котором пользователь может добавлять, удалять, изменять и фильтровать задачи',
         techs: 'HTML, CSS, SCSS, JS, TS, React',
@@ -117,10 +143,12 @@ const projectsRu = {
             'После создания нескольких задач пользователь может найти необходимую при помощи встроенного фильтра задач',
             'Задачи могут находиться в нескольких состояниях, таких, как: нужно сделать, в процессе, готово',
         ],
+        github: 'https://github.com/Leshista/infotecs-test',
+        githubPages: 'https://leshista.github.io/infotecs-test/',
     },
-    3: {
+    ToDoList: {
         title: 'To Do List',
-        image: null,
+        image: ToDoListImage,
         subtitle:
             'Более простое ToDo приложения, в котором пользователь может добавлять, удалять, а также фильтровать задачи',
         techs: 'HTML, CSS, SCSS, JS, TS, React',
@@ -130,10 +158,12 @@ const projectsRu = {
             'После создания нескольких задач пользователь может найти необходимую при помощи встроенного фильтра задач',
             'Задачи могут находиться в двух состояниях: нужно сделать и готово',
         ],
+        github: 'https://github.com/Leshista/ReactToDoList',
+        githubPages: 'https://leshista.github.io/ReactToDoList/',
     },
-    4: {
+    'LoremIpsum.net': {
         title: 'LoremIpsum.net',
-        image: null,
+        image: LoremIpsumImage,
         subtitle:
             'Тестовый ленд для прохождения задания на должность верстальщика',
         techs: 'HTML, CSS, JS, Figma',
@@ -142,10 +172,12 @@ const projectsRu = {
             'Реализованы кастомные инпуты в форме: <select/>, <range/> <input type="file"/>',
             'Работающие ссылки-якори, ведущие к форме',
         ],
+        github: 'https://github.com/Leshista/loremIpsum.net',
+        githubPages: 'https://leshista.github.io/loremIpsum.net/',
     },
-    5: {
+    CNN: {
         title: 'Статический снепшот главной страницы CNN',
-        image: null,
+        image: CNNImage,
         subtitle:
             'Довольно комплексная страница сделанная в процессе прохождения курса по HTML/CSS/JS',
         techs: 'HTML, CSS, JS, SCSS, BootStrap, PhotoShop',
@@ -155,10 +187,12 @@ const projectsRu = {
             'Функциональные (Но пустые) селекторы языка и поиск',
             'Работает как должно только на десктопном разрешении',
         ],
+        github: 'https://github.com/Leshista/CNNStaticCopy/',
+        githubPages: 'https://leshista.github.io/CNNStaticCopy/',
     },
-    6: {
+    IndexPage: {
         title: 'Главная страница блога',
-        image: null,
+        image: IndexPageImage,
         subtitle: 'Простенькая но симпатичная главная страница',
         techs: 'HTML, CSS, PhotoShop',
         features: [
@@ -166,10 +200,12 @@ const projectsRu = {
             'Мокап-календарь, сделанный при помощи таблицы, выглядит неплохо',
             'Эффекты при наведении на ссылки немного оживляют сайт',
         ],
+        github: 'https://github.com/Leshista/FlexBoxSite/',
+        githubPages: 'https://leshista.github.io/FlexBoxSite/',
     },
-    7: {
+    Quest: {
         title: 'A Quest for Glory',
-        image: null,
+        image: QuestImage,
         subtitle: 'Незавершённая но милая игрушка',
         techs: 'HTML, CSS, JS, SCSS, PhotoPea',
         features: [
@@ -181,6 +217,8 @@ const projectsRu = {
             'Героем можно управлять, кликая на тайлы или при помощи кнопок wasd/стрелок',
             'Вы можете побеждать врагов кликая по ним & получать за это золото',
         ],
+        github: 'https://github.com/Leshista/JSGame/',
+        githubPages: 'https://leshista.github.io/JSGame/',
     },
 };
 

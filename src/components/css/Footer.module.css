@@ -58,11 +58,6 @@
     transition-duration: 500ms;
 }
 
-.footer .links img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
 /* Media Queries */
 
 @media (max-width: 500px) {

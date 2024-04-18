@@ -11,7 +11,7 @@
     width: 25vw;
     font-family: 'Cutive Mono', monospace;
     padding: 3rem;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 }
 
 .nameTyping::before {
@@ -40,6 +40,24 @@
     font-family: 'Cutive Mono', monospace;
     color: #32d08c;
     font-size: 3.8rem;
+}
+.languageSwitcher__Wrapper {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+.languageSwitcher {
+    width: 5rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.languageSwitcher:hover {
+    box-shadow: 1px 1px 50px #32d08c;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .burger {
     position: fixed;

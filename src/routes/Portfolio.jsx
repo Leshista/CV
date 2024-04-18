@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { hiddenProjectActions } from '../store/hiddenProject';
 
 const Portfolio = () => {
-    const isHidden = useSelector(state => state.hiddenProject.hidden)
+    const hiddenProjectIsVisible = useSelector(state => state.hiddenProject.isVisible)
     const dispatch = useDispatch();
     const toggleHiddenProject = () => {
         dispatch(hiddenProjectActions.toggleHiddenProject())
@@ -25,7 +25,7 @@ const Portfolio = () => {
                     <ProjectItem projectId={'LoremIpsum.net'} />
                     <ProjectItem projectId={'CNN'} />
                     <ProjectItem projectId={'IndexPage'} />
-                    {!isHidden && <ProjectItem projectId={'Quest'} />}
+                    {hiddenProjectIsVisible && <ProjectItem projectId={'Quest'} />}
                 </section>
                 <Divider dividerType='bottom' dividerNumber={3} />
             </article>

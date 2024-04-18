@@ -8,10 +8,11 @@
 }
 
 .nameTyping {
-    width: 25vw;
+    width: 30vw;
     font-family: 'Cutive Mono', monospace;
     padding: 3rem;
     font-size: 3.5rem;
+    white-space: nowrap;
 }
 
 .nameTyping::before {
@@ -34,12 +35,12 @@
 
 .nav__item {
     font-family: 'Cutive Mono', monospace;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 }
 .nav__item_active {
     font-family: 'Cutive Mono', monospace;
     color: #32d08c;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 }
 .languageSwitcher__Wrapper {
     z-index: 3;
@@ -50,6 +51,7 @@
 }
 .languageSwitcher {
     width: 5rem;
+    height: 3.3rem;
     cursor: pointer;
     transition-property: all;
     transition-duration: 500ms;
@@ -62,20 +64,21 @@
 .burger {
     position: fixed;
     display: none;
-    padding: 2.5rem;
+    padding: 2.8rem;
     z-index: 100;
     right: 0;
 }
 
-.burger__stripe {
+.burger__Stripe {
     background-color: #32d08c;
     width: 4rem;
-    height: 0.7rem;
+    height: 0.5rem;
     margin-bottom: 0.7rem;
     -webkit-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
+    box-shadow: 1px 1px 10px #32d08c;
 }
 
 @-webkit-keyframes typing {
@@ -342,12 +345,12 @@
     .header .nav {
         display: none;
     }
-
+    .languageSwitcher__Wrapper {
+        margin-right: 6rem;
+    }
     .header .burger {
         display: block;
     }
-}
-@media (max-width: 500px) {
     .header .nameTyping {
         font-size: 2.2rem;
     }

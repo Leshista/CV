@@ -1,16 +1,15 @@
 import { NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-
-import { langActions } from '../store/lang';
+import { burgerActions } from '../store/burger'
 import textProvider from '../UI/textProvider';
 import classes from './css/Header.module.css'
-import flagEN from './images/en.png'
-import flagRU from './images/ru.png'
+import LanguageSwitcher from './languageSwitcher';
 
 const Header = () => {
-    const dispatch = useDispatch()
-    const languageToEnHandler = () => dispatch(langActions.toggleLangEn())
-    const languageToRuHandler = () => dispatch(langActions.toggleLangRu())
+    const dispatch = useDispatch();
+    const burgerToggleHandler = () => {
+        dispatch(burgerActions.toggleBurgerVisibility())
+    }
 
     return (
         <header className={classes.header}>
@@ -18,16 +17,13 @@ const Header = () => {
             <nav className={classes.nav}>
                 <NavLink to='/CV/' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item} end>{ textProvider('aboutMe') }</NavLink>
                 <NavLink to='portfolio' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('portfolio') }</NavLink>
-                <NavLink to='courses' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('courses') }</NavLink>
+                <NavLink to='other' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('other') }</NavLink>
             </nav>
-            <div className={classes.languageSwitcher__Wrapper}>
-            <img src={flagRU} className={classes.languageSwitcher} onClick={languageToRuHandler}></img>
-            <img src={flagEN} className={classes.languageSwitcher} onClick={languageToEnHandler}></img>
-            </div>
-            <div className={classes.burger}>
-                <div className={classes.burger__stripe}></div>
-                <div className={classes.burger__stripe}></div>
-                <div className={classes.burger__stripe}></div>
+            <LanguageSwitcher isFixed={false}/>
+            <div className={classes.burger} onClick={burgerToggleHandler}>
+                <div className={classes.burger__Stripe}></div>
+                <div className={classes.burger__Stripe}></div>
+                <div className={classes.burger__Stripe}></div>
             </div>
         </header>
     )

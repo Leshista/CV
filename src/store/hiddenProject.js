@@ -2,10 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const hiddenProjectSlice = createSlice({
     name: 'hiddenProject',
-    initialState: { hidden: true },
+    initialState: { isVisible: false },
     reducers: {
         toggleHiddenProject(state) {
-            state.hidden = !state.hidden;
+            state.isVisible = !state.isVisible;
         },
     },
 });

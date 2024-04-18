@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 const textEn = {
     aboutMe: 'About me',
     portfolio: 'Portfolio',
-    courses: 'Courses',
+    other: 'Other',
 
     // Experience section
 
@@ -113,7 +113,7 @@ const textEn = {
 const textRu = {
     aboutMe: 'Обо мне',
     portfolio: 'Портфолио',
-    courses: 'Курсы',
+    other: 'Прочее',
 
     // Секция "Обо мне"
 

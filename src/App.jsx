@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import PageWrapper from "./routes/PageWrapper";
 import Experience from './routes/Experience'
 import Portfolio from './routes/Portfolio'
-import Courses from './routes/Courses'
+import Other from './routes/Other'
 import ProjectDetails from "./routes/ProjectDetails";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
                 {path: ':id', element: <ProjectDetails/>}
               ]
           },
-          {path: 'courses', element: <Courses/>}
+          {path: 'other', element: <Other/>}
         ]
     }
   ]);

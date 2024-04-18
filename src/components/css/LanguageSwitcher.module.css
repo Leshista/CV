@@ -1,0 +1,36 @@
+.languageSwitcher__Wrapper {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+    position: relative;
+}
+.languageSwitcher__Wrapper_Fixed {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+    position: fixed;
+    top: 2.5rem;
+    right: 6rem;
+}
+.languageSwitcher {
+    width: 5rem;
+    height: 3.3rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.languageSwitcher:hover {
+    box-shadow: 1px 1px 50px #32d08c;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+    .languageSwitcher__Wrapper {
+        margin-right: 6rem;
+    }
+}

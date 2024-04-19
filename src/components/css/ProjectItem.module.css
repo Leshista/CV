@@ -39,4 +39,8 @@
     .project__Wrapper {
         max-width: 80vw;
     }
+    .project__Link:hover {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }

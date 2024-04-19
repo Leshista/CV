@@ -16,9 +16,10 @@ const projectsEn = {
         techs: 'HTML, CSS, JS, React, React-Router, Redux, Redux-ToolKit',
         features: [
             'Client-side routing provides multi-page UX without page reloading',
-            'Redux provides real-time language change',
+            'Redux provides convenient use of app-level states',
             'CSS animation provides a nice little typing animation',
             'There are smooth SVG curves in the design',
+            'Google Drive Iframe is used to provide .doc view',
             'A little easter egg is hidden out there somewhere (:',
         ],
         github: 'https://github.com/Leshista/CV',
@@ -123,9 +124,10 @@ const projectsRu = {
         techs: 'HTML, CSS, JS, React, React-Router, Redux, Redux-ToolKit',
         features: [
             'Роутинг на стороне клиента предоставляет многостраничный UX без перезагрузки страницы',
-            'При помощи Redux осуществлена смена языка в реальном времени',
+            'Redux предоставляет удобный доступ к нескольким app-level states',
             'Реализована CSS анимация с эффектом печатания',
             'В дизайне использованы SVG элементы',
+            'Google Drive Iframe использован для веб-просмотра .doc',
             'Где-то здесь прячется пасхалка (:',
         ],
         github: 'https://github.com/Leshista/CV',

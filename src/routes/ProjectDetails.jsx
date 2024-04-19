@@ -22,7 +22,7 @@ const ProjectDetails = () => {
                     {features.map(feature => <li className={classes.projectDetails__Item} key={features.indexOf(feature)}>{feature}</li>)}
                 </ol>
                 <div className={classes.github__Wrapper}>
-                <img src={ghLogo} className={classes.github__Logo}></img>
+                <Link to={github}><img src={ghLogo} className={classes.github__Logo}></img></Link>
                 <Link to={github} className={classes.github__Link}><span>{github}</span></Link>
                 </div>
             </dialog>

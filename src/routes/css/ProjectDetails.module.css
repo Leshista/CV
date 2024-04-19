@@ -11,7 +11,7 @@
     font-size: 3rem;
     width: 50vw;
     position: fixed;
-    top: 15vh;
+    top: 10vh;
     background: -webkit-gradient(
         linear,
         left top,
@@ -34,7 +34,7 @@
     flex-wrap: wrap;
 }
 .projectDetails__List_TwoRows > .projectDetails__Item {
-    margin: 1.5rem 4rem;
+    margin: 1rem 4rem;
 }
 .projectDetails__Image {
     display: block;
@@ -45,7 +45,7 @@
     border-radius: 0.5rem;
 }
 .project__Techs {
-    margin: 1.5rem 4rem;
+    margin: 1rem 4rem;
 }
 .projectDetails__Image:hover {
     box-shadow: 1px 1px 50px #32d08c;
@@ -79,8 +79,26 @@
     right: -4rem;
 }
 
+@media (max-width: 1100px) {
+    .projectDetails__Wrapper {
+        width: 70vw;
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 576px) {
     .projectDetails__Wrapper {
         top: 15vh;
+    }
+    .github__Link {
+        display: none;
+    }
+    .projectDetails__Close {
+        right: -3rem;
+    }
+}
+@media (max-height: 1000px) {
+    .projectDetails__Wrapper {
+        position: absolute;
     }
 }

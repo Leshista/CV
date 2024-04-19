@@ -1,8 +1,14 @@
-# React + Vite
+# Curriculum Vitae SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Сделано при помощи: HTML, CSS, JS, React, React-Router, Redux, Redux-ToolKit
 
-Currently, two official plugins are available:
+### Интересные детали:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Реализованы три раздела: Обо мне, Портфолио и Прочее
+-   Для их отображения и переключения использован React Router
+-   В разделе Портфолио каждый проэкт открывается в динамичном route со всей необходимой информацией
+-   При помощи Redux сделаны несколько глобальных state, влияющих на весь сайт
+-   Главным из которых является state языка, при переключении которго в хедере меняется весь текстовый контент на странице
+-   Google Drive Iframe использован для веб-просмотра .doc
+-   Реализована CSS анимация с эффектом печатания
+-   В дизайне использованы SVG элементы

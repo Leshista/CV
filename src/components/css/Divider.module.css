@@ -17,6 +17,12 @@
 .darkAquamarine {
     fill: #0a2c1d;
 }
+.orange {
+    fill: #f7b733;
+}
+.darkOrange {
+    fill: #fc4a1a;
+}
 
 .dividerBottom {
     position: absolute;
@@ -27,6 +33,16 @@
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     z-index: -1;
+}
+
+.dividerBottomUpsideDown {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+    margin-top: -7rem;
 }
 
 .dividerUpsideDown {

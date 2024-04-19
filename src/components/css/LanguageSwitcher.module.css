@@ -34,3 +34,8 @@
         margin-right: 6rem;
     }
 }
+@media (max-width: 500px) {
+    .languageSwitcher__Wrapper {
+        display: none;
+    }
+}

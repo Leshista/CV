@@ -1,13 +1,48 @@
 .other__Wrapper {
-    margin: 15rem 0 5rem 0;
+    margin: 25rem 0 15rem 0;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(#fc4a1a),
+        to(#f7b633)
+    );
+    background: linear-gradient(0deg, #fc4a1a, #f7b633);
+    text-align: center;
+}
+.other__Title {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 5rem;
+    font-weight: bold;
 }
 .letter__Wrapper {
-    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 5rem 0;
 }
 .letter {
-    min-height: 100vh;
-    min-width: 50%;
-    width: fit-content;
-    margin: 0 auto;
-    border-radius: 3rem;
+    position: relative;
+    margin: auto;
+    width: 80rem;
+    height: 100rem;
+}
+@media (max-width: 992px) {
+    .other__Title {
+        margin-top: 26.8rem;
+    }
+}
+@media (max-width: 800px) {
+    html {
+        overflow-x: hidden;
+    }
+    .letter {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .other__Title {
+        font-size: 3rem;
+    }
 }

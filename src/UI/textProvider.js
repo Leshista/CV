@@ -108,6 +108,9 @@ const textEn = {
     // Portfolio Section
     myProjects: 'My Projects',
     techsUsed: 'Techs Used',
+
+    // Other Section
+    recommendationLetter: 'Recommendation letter',
 };
 
 const textRu = {
@@ -218,6 +221,9 @@ const textRu = {
     // Секция "Портфолио"
     myProjects: 'Мои проекты',
     techsUsed: 'Технологии',
+
+    // Секция "Прочее"
+    recommendationLetter: 'Рекомендательное письмо',
 };
 
 const textProvider = (text) => {

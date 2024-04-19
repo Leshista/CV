@@ -9,7 +9,7 @@
 
 .nameTyping {
     width: 30vw;
-    font-family: 'Cutive Mono', monospace;
+    font-family: monospace;
     padding: 3rem;
     font-size: 3.5rem;
     white-space: nowrap;
@@ -34,11 +34,11 @@
 }
 
 .nav__item {
-    font-family: 'Cutive Mono', monospace;
+    font-family: monospace;
     font-size: 3.5rem;
 }
 .nav__item_active {
-    font-family: 'Cutive Mono', monospace;
+    font-family: monospace;
     color: #32d08c;
     font-size: 3.5rem;
 }

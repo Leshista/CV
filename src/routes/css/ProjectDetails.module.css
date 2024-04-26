@@ -66,6 +66,7 @@
 .github__Link {
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 .github__Link:hover {
     -webkit-transform: scale(1);

@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 
+import AtWorkImage from './images/AT-WORK.jpg';
 import CVImage from './images/CV.jpg';
 import ComfyJournalImage from './images/ComfyJournal.jpg';
 import ToDoListImage from './images/ToDoList.jpg';
@@ -9,6 +10,19 @@ import IndexPageImage from './images/IndexPage.jpg';
 import QuestImage from './images/Quest.jpg';
 
 const projectsEn = {
+    AtWork: {
+        title: 'AT-WORK SPA',
+        image: AtWorkImage,
+        subtitle: 'A test single-page app for applying for React Developer Job',
+        techs: 'HTML, CSS, JS, React, React-Router, Redux, Redux-ToolKit',
+        features: [
+            'There are two routes made using React Router: Index and dynamic Details page',
+            'All info in cards is fetched from server, stored in Redux store, then dynamically renders them',
+            "Cards' state can be changed by user to three categories: active, archived, hidden",
+        ],
+        github: 'https://github.com/Leshista/AT-WORK__SPA',
+        githubPages: 'https://leshista.github.io/AT-WORK__SPA/',
+    },
     CV: {
         title: 'Curriculum Vitae SPA',
         image: CVImage,
@@ -116,6 +130,20 @@ const projectsEn = {
 };
 
 const projectsRu = {
+    AtWork: {
+        title: 'AT-WORK SPA',
+        image: AtWorkImage,
+        subtitle:
+            'Тестовое приложение для прохождения задания на позицию React Developer',
+        techs: 'HTML, CSS, JS, React, React-Router, Redux, Redux-ToolKit',
+        features: [
+            'При помощи React Router реализованы два раута: Index и динамичная Details страница',
+            'Все данные в карточках загружаются с сервера, хранятся в Redux Store, а затем рендерятся оттуда динамически',
+            'Состояние карточки может быть изменено пользователем и может быть одним из трёх: active, archived, hidden',
+        ],
+        github: 'https://github.com/Leshista/AT-WORK__SPA',
+        githubPages: 'https://leshista.github.io/AT-WORK__SPA/',
+    },
     CV: {
         title: 'Curriculum Vitae SPA',
         image: CVImage,
@@ -167,7 +195,7 @@ const projectsRu = {
         title: 'LoremIpsum.net',
         image: LoremIpsumImage,
         subtitle:
-            'Тестовый ленд для прохождения задания на должность верстальщика',
+            'Тестовый ленд для прохождения задания на позицию верстальщика',
         techs: 'HTML, CSS, JS, Figma',
         features: [
             'Вся вёрстка была создана на основе Figma макета, предоставленного работодателем',

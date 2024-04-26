@@ -19,6 +19,7 @@ const Portfolio = () => {
                 <Divider dividerType='upsideDown' dividerNumber={2} />
                 <h1 className={classes.portfolio__Title}>{ textProvider('myProjects') }</h1>
                 <section className={classes.project__List}>
+                    <ProjectItem projectId={'AtWork'} />
                     <ProjectItem projectId={'CV'} />
                     <ProjectItem projectId={'ComfyJournal'} />
                     <ProjectItem projectId={'ToDoList'} />

@@ -4,65 +4,52 @@ const textEn = {
     aboutMe: 'About me',
     portfolio: 'Portfolio',
     other: 'Other',
+    menu: 'Menu',
 
     // Experience section
 
     // Right side
     name: 'Stanislav Aleshin',
-    profession: 'Front-End Developer',
+    profession: 'Frontend Developer / Web Developer',
 
     myExperience:
-        "Hi, I'm 23 years old frontend developer with year and a half work experience as HTML/CSS/JS Developer under my belt. I like to do my tasks accurately and on time, work well in teams and am ready to reach new heights.",
+        "I'm a frontend and web developer based in Saint Petersburg, with more than four years of commercial experience (since 2022). I build, adapt and maintain landing pages and websites. Day to day I work with HTML, CSS, JavaScript and TypeScript. I have commercial experience with React and React Router: maintaining existing sites and working with AI-generated projects on that stack. I also have commercial experience maintaining a corporate Astro site. Redux Toolkit is something I used in my own projects. I use AI tools to speed up routine tasks — after that I still read, fix and ship the code myself.",
 
-    wasWorkingAs: 'I was working as',
-    jobRequirments: 'This job required me to do the following:',
+    wasWorkingAs: 'Work experience',
+    jobRequirments: 'Main responsibilities:',
 
     job1: {
-        name: 'Lucky Group Layout Developer',
+        name: 'Gipsyland — Senior Layout Developer / Web Dev Automation',
+        years: 'May 2024 — Present',
         requirements: [
-            "To read, fix and improve other people's code",
-            'To solve unusual problems from scratch',
-            'To use in Jira and Confluence systems',
-            'To work in a team with QA-engineers, content managers and other layout developers',
+            'Build, adapt and maintain affiliate landing pages from scratch (HTML, CSS, JavaScript, TypeScript, basic PHP)',
+            'Update existing React sites and AI-generated React / React Router projects: components, UI and bugfixes',
+            'Corporate Astro site: language versions, content and UI changes together with a designer',
+            'Git and GitHub, deploys, domains, Namecheap hosting and SSL',
+            'Automate landing-page production with AI tools and low-code platforms',
+            'Mentor developers, mostly during onboarding',
+            'Cut landing production from 3–3.5 hours to 25–40 minutes (about 4.5–8×) while keeping the design, functionality and ad-project requirements intact',
         ],
     },
 
     job2: {
-        name: 'Delivery Club Foot Courier',
+        name: 'Lucky Group — Layout Developer',
+        years: 'Sep 2022 — Mar 2024',
         requirements: [
-            'To walk a lot',
-            'To accept and deliver food',
-            'To learn the pathways of the city of Rostov-on-Don',
+            'Adaptive layout of landing pages and UI pieces from specs (HTML, CSS, JavaScript)',
+            'Support and improve existing projects, including other people’s code',
+            'Update styles and content; build popups and other interactive elements in JavaScript',
+            'Pull, commit and push with Git; pick up tasks from the team board',
+            'Work with other layout developers, QA engineers and content managers; fix issues from bug reports',
         ],
     },
 
     job3: {
-        name: 'Hobby Games Shop Seller',
-        requirements: [
-            'To help customers pick what boardgame to buy',
-            'To sell and deliver boardgames',
-            'To use business automation software 1C:Enterprise',
-            'To accept, sort and keep track of incoming boardgames',
-        ],
-    },
-
-    job4: {
-        name: 'OZON Call-Center Worker',
-        requirements: [
-            'To help customers with troubles',
-            'To learn and keep track of ever-increasing amount of info',
-            'To use Jira and Confluence',
-            'To mentor new members of the team',
-        ],
-    },
-
-    job5: {
         name: 'English Tutor',
+        years: 'Nov 2016 — May 2022',
         requirements: [
-            'To help kids to improve their English vocabulary',
-            'To teach children English grammar',
-            'To prepare pupils for school exams',
-            'To help kids with doing their homework',
+            'One-to-one English lessons tailored to each student’s level and needs',
+            'Grammar, vocabulary, pronunciation, schoolwork and exam preparation',
         ],
     },
 
@@ -81,101 +68,94 @@ const textEn = {
     // Left Side
     hardSkills: 'Hard Skills',
 
-    html: 'Html 5',
-    css: 'CSS 3',
-    scss: 'SASS(SCSS)',
+    html: 'HTML5',
+    css: 'CSS3',
+    scss: 'Sass/SCSS',
     bootstrap: 'Bootstrap 5',
     bem: 'BEM',
-    jquery: 'JQuery',
-    js: 'JavaScript ES 6',
+    jquery: 'jQuery',
+    js: 'JavaScript',
     ts: 'TypeScript',
     react: 'React',
-    reactRouter: 'React-Router',
-    redux: 'Redux',
-    reduxToolkit: 'Redux-Toolkit',
+    reactRouter: 'React Router',
+    reduxToolkit: 'Redux Toolkit',
+    astro: 'Astro (basic)',
     git: 'Git',
     gitHub: 'GitHub',
-    english: 'English B2',
+    figma: 'Figma',
+    php: 'PHP (basic)',
+    aiTools: 'AI tools (Cursor, ChatGPT, Claude Code)',
+    english: 'English C1',
 
     softSkills: 'Soft Skills',
 
     fastLearner: 'Fast learner',
-    canGoogle: 'Can google Stuff',
-    highlyMotivated: 'Highly motivated',
-    teamWorker: 'Team worker',
-    sociable: 'Sociable',
+    problemSolver: 'Self-directed problem solving',
+    teamWorker: 'Works well in a team',
+    mentoring: 'Mentoring',
 
     // Portfolio Section
     myProjects: 'My Projects',
-    techsUsed: 'Techs Used',
+    studyProjects: 'Learning projects',
+    techsUsed: 'Tech used',
 
     // Other Section
     recommendationLetter: 'Recommendation letter',
+    recommendationLetterSource:
+        'From the head of the layout department at Lucky Group (previous employer).',
+    openLetter: 'Open in Google Docs',
 };
 
 const textRu = {
     aboutMe: 'Обо мне',
     portfolio: 'Портфолио',
     other: 'Прочее',
+    menu: 'Меню',
 
     // Секция "Обо мне"
 
     // Правая сторона
     name: 'Станислав Алёшин',
-    profession: 'Front-End Developer',
+    profession: 'Frontend Developer / Web Developer',
 
     myExperience:
-        'Привет, я фронтенд разработчик, мне 23 года, и за моими плечами полтора года работы в качестве HTML/CSS/JS разработчика в компании LuckyOnline. Я люблю выполнять работу точно и в срок, хорошо работаю в команде и готов к достижению новых вершин!',
+        'Я фронтенд- и веб-разработчик из Санкт-Петербурга, коммерческий опыт с 2022 года — больше четырёх лет. Занимаюсь разработкой, адаптацией и сопровождением лендингов и сайтов. В работе опираюсь на HTML, CSS, JavaScript и TypeScript. Есть коммерческий опыт с React и React Router: сопровождение существующих сайтов и работа с ИИ-сгенерированными проектами на этом стеке. На Astro — сопровождение корпоративного сайта. Redux Toolkit использовал в собственных проектах. ИИ-инструменты применяю, чтобы ускорить рутину, — после этого всё равно сам читаю, правлю и сдаю код.',
 
-    wasWorkingAs: 'Прошлые места работы',
-    jobRequirments: 'На этом месте я делал следующее:',
+    wasWorkingAs: 'Опыт работы',
+    jobRequirments: 'Основные обязанности:',
 
     job1: {
-        name: 'Lucky Group Верстальщик',
+        name: 'ООО «Джипсиленд» — старший верстальщик / автоматизация веб-разработки',
+        years: '05.2024 — н.в.',
         requirements: [
-            'Читал, правил и улучшал чужой код',
-            'Решал нестандартные задачи с нуля',
-            'Использовал Jira и Confluence',
-            'Работал в команде с верстальщиками, тестировщиками и контент-менеджерами',
+            'Разработка, адаптация и поддержка лендингов в affiliate marketing: вёрстка с нуля, HTML, CSS, JavaScript, TypeScript и базовый PHP',
+            'Доработка существующих сайтов на React и ИИ-сгенерированных проектов на React / React Router: компоненты, интерфейсы, исправление ошибок',
+            'Сопровождение корпоративного сайта на Astro: языковые версии, контент и элементы интерфейса совместно с дизайнером',
+            'Git и GitHub, деплой, домены, хостинг Namecheap и SSL',
+            'Автоматизация создания лендингов с ИИ-инструментами и AI/low-code платформами',
+            'Наставничество разработчиков, в основном на этапе адаптации',
+            'Сократил создание лендинга с 3–3,5 часов до 25–40 минут (примерно в 4,5–8 раз) при сохранении дизайна, работоспособности и требований рекламных проектов',
         ],
     },
 
     job2: {
-        name: 'Delivery Club Пеший Курьер',
+        name: 'Lucky Group — верстальщик',
+        years: '09.2022 — 03.2024',
         requirements: [
-            'Много ходил',
-            'Принимал и доставлял еду',
-            'Изучал улицы города Ростова-на-Дону',
+            'Адаптивная вёрстка лендингов и элементов интерфейса по ТЗ (HTML, CSS, JavaScript)',
+            'Поддержка и доработка существующих проектов, в том числе чужого кода',
+            'Правки стилей и контента, попапы и другая интерактивность на JavaScript',
+            'Git: получение исходников, коммиты и отправка в репозиторий; задачи с командной доски',
+            'Работа с верстальщиками, QA и контент-менеджерами; правки по баг-репортам',
         ],
     },
 
     job3: {
-        name: 'Hobby Games Продавец Настольных Игр',
+        name: 'Репетитор английского языка',
+        years: '11.2016 — 05.2022',
         requirements: [
-            'Помогал покупателям в выборе игр',
-            'Продавал и доставлял настольных игр',
-            'Работал в программе 1С:Предприятие',
-            'Принимал, сортировал и вёл учёт поступающих товаров',
-        ],
-    },
-
-    job4: {
-        name: 'OZON Работник Call-Центра',
-        requirements: [
-            'Помогал клиентам с возникающими трудностями',
-            'Учил и пользовался постоянно увеличивающейся рабочей информацией',
-            'Использовал Jira и Confluence',
-            'Помогал с адаптацией новых членов команды',
-        ],
-    },
-
-    job5: {
-        name: 'Репетитор Английского Языка',
-        requirements: [
-            'Помогал детям увеличивать словарный запас',
-            'Объяснял грамматику английского языка',
-            'Готовил учеников к школьным экзаменам',
-            'Помогал детям с решением домашнего задания',
+            'Проведение индивидуальных занятий по английскому языку с учётом уровня подготовки и потребностей учеников.',
+            'Объяснение грамматики, расширение словарного запаса, работа над произношением, помощь с учебными заданиями и подготовкой к экзаменам.',
         ],
     },
 
@@ -194,36 +174,42 @@ const textRu = {
     // Left Side
     hardSkills: 'Hard Skills',
 
-    html: 'Html 5',
-    css: 'CSS 3',
-    scss: 'SASS(SCSS)',
+    html: 'HTML5',
+    css: 'CSS3',
+    scss: 'Sass/SCSS',
     bootstrap: 'Bootstrap 5',
     bem: 'BEM',
-    jquery: 'JQuery',
-    js: 'JavaScript ES 6',
+    jquery: 'jQuery',
+    js: 'JavaScript',
     ts: 'TypeScript',
     react: 'React',
-    reactRouter: 'React-Router',
-    redux: 'Redux',
-    reduxToolkit: 'Redux-Toolkit',
+    reactRouter: 'React Router',
+    reduxToolkit: 'Redux Toolkit',
+    astro: 'Astro (базовый)',
     git: 'Git',
     gitHub: 'GitHub',
-    english: 'English B2',
+    figma: 'Figma',
+    php: 'PHP (базовый)',
+    aiTools: 'AI-инструменты (Cursor, ChatGPT, Claude Code)',
+    english: 'English C1',
 
     softSkills: 'Soft Skills',
 
     fastLearner: 'Быстро учусь',
-    canGoogle: 'Умею гуглить',
-    highlyMotivated: 'Высоко замотивирован',
-    teamWorker: 'Командный игрок',
-    sociable: 'Общительный',
+    problemSolver: 'Самостоятельно разбираюсь в задачах',
+    teamWorker: 'Командная работа',
+    mentoring: 'Наставничество',
 
     // Секция "Портфолио"
     myProjects: 'Мои проекты',
+    studyProjects: 'Учебные проекты',
     techsUsed: 'Технологии',
 
     // Секция "Прочее"
     recommendationLetter: 'Рекомендательное письмо',
+    recommendationLetterSource:
+        'Письмо руководителя отдела вёрстки Lucky Group (предыдущее место работы).',
+    openLetter: 'Открыть в Google Docs',
 };
 
 const textProvider = (text) => {

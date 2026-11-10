@@ -21,20 +21,33 @@
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 5rem;
 }
-.project__ToggleHiddenProject {
-    width: 5rem;
-    height: 5rem;
-    margin: 0 auto;
+.portfolio__StudyTitle {
+    font-size: 3.4rem;
+    text-align: center;
+    margin: 6rem 0 2.5rem 0;
+    font-weight: bold;
+}
+.project__List_Study {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 3rem;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 992px) {
-    .project__List {
+    .project__List,
+    .project__List_Study {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 666px) {
-    .project__List {
+    .project__List,
+    .project__List_Study {
         grid-template-columns: 1fr;
+    }
+    .portfolio__StudyTitle {
+        font-size: 2.8rem;
+        margin-top: 4rem;
     }
 }

@@ -3,16 +3,8 @@ import Divider from '../components/Divider'
 import ProjectItem from '../components/ProjectItem';
 import textProvider from '../UI/textProvider';
 import { Outlet } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { hiddenProjectActions } from '../store/hiddenProject';
 
 const Portfolio = () => {
-    const hiddenProjectIsVisible = useSelector(state => state.hiddenProject.isVisible)
-    const dispatch = useDispatch();
-    const toggleHiddenProject = () => {
-        dispatch(hiddenProjectActions.toggleHiddenProject())
-    }
-
     return (
         <>
             <article className={classes.portfolio__Wrapper}>
@@ -22,18 +14,20 @@ const Portfolio = () => {
                     <ProjectItem projectId={'AtWork'} />
                     <ProjectItem projectId={'CV'} />
                     <ProjectItem projectId={'ComfyJournal'} />
-                    <ProjectItem projectId={'ToDoList'} />
                     <ProjectItem projectId={'LoremIpsum.net'} />
-                    <ProjectItem projectId={'CNN'} />
-                    <ProjectItem projectId={'IndexPage'} />
-                    {hiddenProjectIsVisible && <ProjectItem projectId={'Quest'} />}
+                </section>
+                <h2 className={classes.portfolio__StudyTitle}>{ textProvider('studyProjects') }</h2>
+                <section className={classes.project__List_Study}>
+                    <ProjectItem projectId={'ToDoList'} compact />
+                    <ProjectItem projectId={'CNN'} compact />
+                    <ProjectItem projectId={'IndexPage'} compact />
+                    <ProjectItem projectId={'Quest'} compact />
                 </section>
                 <Divider dividerType='bottom' dividerNumber={3} />
             </article>
-                <div className={classes.project__ToggleHiddenProject} onClick={toggleHiddenProject}></div>
             <Outlet/>
         </>
     )
 }
 
-export default Portfolio;
+export default Portfolio

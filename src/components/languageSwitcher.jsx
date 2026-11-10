@@ -7,15 +7,25 @@ import { useDispatch } from 'react-redux';
 
 const LanguageSwitcher = ({isFixed}) => {
     const dispatch = useDispatch()
-    const languageToEnHandler = () => dispatch(langActions.toggleLangEn())
-    const languageToRuHandler = () => dispatch(langActions.toggleLangRu())
+    const languageToEnHandler = () => {
+        dispatch(langActions.toggleLangEn())
+        document.documentElement.lang = 'en'
+    }
+    const languageToRuHandler = () => {
+        dispatch(langActions.toggleLangRu())
+        document.documentElement.lang = 'ru'
+    }
 
     return (
         <div className={!isFixed ? classes.languageSwitcher__Wrapper : classes.languageSwitcher__Wrapper_Fixed}>
-            <img src={flagRU} className={classes.languageSwitcher} onClick={languageToRuHandler}></img>
-            <img src={flagEN} className={classes.languageSwitcher} onClick={languageToEnHandler}></img>
+            <button type="button" className={classes.languageSwitcherButton} onClick={languageToRuHandler} aria-label="Русский">
+                <img src={flagRU} className={classes.languageSwitcher} alt="" />
+            </button>
+            <button type="button" className={classes.languageSwitcherButton} onClick={languageToEnHandler} aria-label="English">
+                <img src={flagEN} className={classes.languageSwitcher} alt="" />
+            </button>
         </div>
     )
 }
 
-export default LanguageSwitcher;
+export default LanguageSwitcher

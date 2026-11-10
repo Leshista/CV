@@ -67,6 +67,9 @@
     padding: 2.8rem;
     z-index: 100;
     right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .burger__Stripe {

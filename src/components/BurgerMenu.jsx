@@ -10,7 +10,7 @@ const BurgerMenu = () => {
     const navigate = useNavigate();
 
     const linkClickHandler = (event) => {
-        const whereTo = event.target.getAttribute('destination')
+        const whereTo = event.currentTarget.getAttribute('data-destination')
         dispatch(burgerActions.toggleBurgerVisibility())
         navigate(whereTo)
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -22,9 +22,9 @@ const BurgerMenu = () => {
             <div className={classes.burgerMenu__Backdrop}></div>
             <div className={classes.burgerMenu__Wrapper}>
                 <ol className={classes.burgerMenu__List}>
-                    <li className={classes.burgerMenu__Item} destination='/CV/' onClick={linkClickHandler}>{ textProvider('aboutMe') }</li>
-                    <li className={classes.burgerMenu__Item} destination='portfolio' onClick={linkClickHandler}>{ textProvider('portfolio') }</li>
-                    <li className={classes.burgerMenu__Item} destination='other' onClick={linkClickHandler}>{ textProvider('other') }</li>
+                    <li className={classes.burgerMenu__Item} data-destination='/' onClick={linkClickHandler}>{ textProvider('aboutMe') }</li>
+                    <li className={classes.burgerMenu__Item} data-destination='/portfolio' onClick={linkClickHandler}>{ textProvider('portfolio') }</li>
+                    <li className={classes.burgerMenu__Item} data-destination='/other' onClick={linkClickHandler}>{ textProvider('other') }</li>
                 </ol>
             </div>
         </>

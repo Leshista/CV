@@ -15,18 +15,18 @@ const Header = () => {
         <header className={classes.header}>
             <div className={classes.nameTyping}></div>
             <nav className={classes.nav}>
-                <NavLink to='/CV/' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item} end>{ textProvider('aboutMe') }</NavLink>
-                <NavLink to='portfolio' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('portfolio') }</NavLink>
-                <NavLink to='other' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('other') }</NavLink>
+                <NavLink to='/' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item} end>{ textProvider('aboutMe') }</NavLink>
+                <NavLink to='/portfolio' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('portfolio') }</NavLink>
+                <NavLink to='/other' className={({ isActive })=> isActive ? classes.nav__item_active : classes.nav__item}>{ textProvider('other') }</NavLink>
             </nav>
             <LanguageSwitcher isFixed={false}/>
-            <div className={classes.burger} onClick={burgerToggleHandler}>
+            <button type="button" className={classes.burger} onClick={burgerToggleHandler} aria-label={textProvider('menu')}>
                 <div className={classes.burger__Stripe}></div>
                 <div className={classes.burger__Stripe}></div>
                 <div className={classes.burger__Stripe}></div>
-            </div>
+            </button>
         </header>
     )
 }
 
-export default Header;
+export default Header

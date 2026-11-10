@@ -28,6 +28,7 @@
     list-style-type: disc;
 }
 .skills__item {
+    line-height: 1.3;
 }
 
 .rightSide {
@@ -54,10 +55,12 @@
 .aboutMe__subTitle {
     text-align: center;
     margin-bottom: 6rem;
+    line-height: 1.25;
 }
 .summary {
 }
 .summary__text {
+    line-height: 1.4;
 }
 .workExperience {
 }

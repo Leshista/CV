@@ -28,15 +28,33 @@
 .project__SubTitle {
     text-align: center;
 }
+.project__Wrapper_Compact {
+    max-width: 18vw;
+    min-height: 22rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    padding: 1.6rem;
+    box-shadow: 1.2rem 1.2rem 0.8rem rgba(0, 0, 0, 0.45);
+}
+.project__Wrapper_Compact .project__Title {
+    font-size: 2.6rem;
+}
+.project__Wrapper_Compact .project__Img {
+    margin: 1.6rem 0;
+}
 
 @media (max-width: 992px) {
     .project__Wrapper {
         max-width: 40vw;
     }
+    .project__Wrapper_Compact {
+        max-width: 36vw;
+    }
 }
 
 @media (max-width: 666px) {
-    .project__Wrapper {
+    .project__Wrapper,
+    .project__Wrapper_Compact {
         max-width: 80vw;
     }
     .project__Link:hover {

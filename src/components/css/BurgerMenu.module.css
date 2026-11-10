@@ -24,4 +24,5 @@
     transition-property: all;
     transition-duration: 500ms;
     text-shadow: 1px 1px 10px #32d08c;
+    cursor: pointer;
 }

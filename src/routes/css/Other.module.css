@@ -16,6 +16,19 @@
     padding-top: 5rem;
     font-weight: bold;
 }
+.letter__Source {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    max-width: 70rem;
+    margin: 2rem auto 1rem auto;
+    padding: 0 2rem;
+}
+.letter__Open {
+    display: inline-block;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
 .letter__Wrapper {
     position: relative;
     overflow: hidden;
@@ -44,5 +57,9 @@
 @media (max-width: 500px) {
     .other__Title {
         font-size: 3rem;
+    }
+    .letter__Source,
+    .letter__Open {
+        font-size: 1.8rem;
     }
 }

@@ -14,9 +14,10 @@
     margin-bottom: 0.5rem;
 }
 .educationItem__profession {
-    color: #8f754f;
+    color: #6e5a3c;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
 }
 

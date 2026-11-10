@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import classes from './css/BurgerMenu.module.css'
 import { useDispatch } from 'react-redux'
 import textProvider from '../UI/textProvider'
@@ -9,12 +10,26 @@ const BurgerMenu = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
+    const closeMenu = () => {
+        dispatch(burgerActions.toggleBurgerVisibility())
+    }
+
     const linkClickHandler = (event) => {
         const whereTo = event.currentTarget.getAttribute('data-destination')
-        dispatch(burgerActions.toggleBurgerVisibility())
+        closeMenu()
         navigate(whereTo)
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    useEffect(() => {
+        const onKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                dispatch(burgerActions.toggleBurgerVisibility())
+            }
+        }
+        window.addEventListener('keydown', onKeyDown)
+        return () => window.removeEventListener('keydown', onKeyDown)
+    }, [dispatch])
 
     return (
         <>

@@ -8,7 +8,8 @@
     cursor: default;
 }
 .projectDetails__Wrapper {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1.45;
     width: 50vw;
     position: fixed;
     top: 10vh;
@@ -51,7 +52,24 @@
     box-shadow: 1px 1px 50px #32d08c;
 }
 .projectDetails__Item {
-    margin: 4rem;
+    margin: 2rem 4rem;
+}
+.projectDetails__Actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 4rem 1rem 4rem;
+}
+.projectDetails__Action {
+    font-size: 2rem;
+    color: #32d08c;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+.projectDetails__Action:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 .github__Wrapper {
     display: flex;
@@ -93,6 +111,9 @@
     }
     .github__Link {
         display: none;
+    }
+    .projectDetails__Action {
+        display: inline-block;
     }
     .projectDetails__Close {
         right: -3rem;

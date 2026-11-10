@@ -1,5 +1,7 @@
 import classes from './css/Experience.module.css'
 import mainPhoto from './images/stanislav.jpg'
+import ghLogo from '../components/images/gh.png'
+import tgLogo from '../components/images/tg.png'
 import textProvider from '../UI/textProvider';
 import WorkItem from '../components/WorkItem';
 import EducationItem from '../components/EducationItem';
@@ -9,7 +11,16 @@ const Experience = () => {
     return (
         <article className={classes.experienceWrapper}>
             <aside className={classes.leftSide}>
-                <img src={mainPhoto} alt="Stanislav Aleshin" className={classes.mainPhoto} />
+                <div className={classes.photoBlock}>
+                    <img src={mainPhoto} alt="Stanislav Aleshin" className={classes.mainPhoto} />
+                    <div className={classes.contacts}>
+                        <a href='mailto:a.leshista@gmail.com' className={classes.contacts__email}>a.leshista@gmail.com</a>
+                        <div className={classes.contacts__links}>
+                            <a href="https://github.com/Leshista" target='_blank' rel='noreferrer'><img src={ghLogo} alt="GitHub" /></a>
+                            <a href="https://t.me/Leshista" target='_blank' rel='noreferrer'><img src={tgLogo} alt="Telegram" /></a>
+                        </div>
+                    </div>
+                </div>
                 <div className={classes.skills__wrapper}>
                     <h3 className={classes.skills__title}>{textProvider('hardSkills')}</h3>
                     <ul className={classes.hardSkills__list}>

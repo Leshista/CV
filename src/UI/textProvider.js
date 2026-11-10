@@ -98,6 +98,8 @@ const textEn = {
     myProjects: 'My Projects',
     studyProjects: 'Learning projects',
     techsUsed: 'Tech used',
+    openProject: 'Open project',
+    sourceCode: 'Source code',
 
     // Other Section
     recommendationLetter: 'Recommendation letter',
@@ -204,6 +206,8 @@ const textRu = {
     myProjects: 'Мои проекты',
     studyProjects: 'Учебные проекты',
     techsUsed: 'Технологии',
+    openProject: 'Открыть проект',
+    sourceCode: 'Исходный код',
 
     // Секция "Прочее"
     recommendationLetter: 'Рекомендательное письмо',

@@ -8,9 +8,38 @@
 
 .leftSide {
 }
+.photoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
 .mainPhoto {
     max-width: 35rem;
     border-radius: 5px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.contacts__email {
+    font-size: 1.6rem;
+    color: #fff;
+    word-break: break-all;
+}
+.contacts__email:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.contacts__links {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+.contacts__links img {
+    max-width: 3.6rem;
 }
 .skills__wrapper {
 }
@@ -60,7 +89,9 @@
 .summary {
 }
 .summary__text {
-    line-height: 1.4;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #3e5360;
 }
 .workExperience {
 }
@@ -76,10 +107,43 @@
 @media (max-width: 900px) {
     .experienceWrapper {
         flex-direction: column;
+        gap: 0;
     }
-    .leftSide {
-        display: flex;
-        justify-content: space-between;
+    .leftSide,
+    .rightSide {
+        display: contents;
+    }
+    .photoBlock {
+        order: 1;
+        align-items: center;
+        margin: 0 auto 2rem auto;
+    }
+    .aboutMe {
+        order: 2;
+        background-color: #fdfdfd;
+        border-radius: 5px 5px 0 0;
+        padding: 4rem 3rem 0 3rem;
+    }
+    .summary {
+        order: 3;
+        background-color: #fdfdfd;
+        padding: 0 3rem 4rem 3rem;
+    }
+    .skills__wrapper {
+        order: 4;
+        margin: 3rem 0;
+    }
+    .workExperience {
+        order: 5;
+        background-color: #fdfdfd;
+        padding: 4rem 3rem 0 3rem;
+        border-radius: 5px 5px 0 0;
+    }
+    .education {
+        order: 6;
+        background-color: #fdfdfd;
+        padding: 0 3rem 4rem 3rem;
+        border-radius: 0 0 5px 5px;
     }
     .mainPhoto {
         max-width: 25rem;
@@ -90,10 +154,14 @@
     }
 }
 @media (max-width: 576px) {
-    .leftSide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .photoBlock,
+    .aboutMe,
+    .summary,
+    .skills__wrapper,
+    .workExperience,
+    .education {
+        align-self: center;
+        width: 100%;
     }
     .mainPhoto {
         height: fit-content;

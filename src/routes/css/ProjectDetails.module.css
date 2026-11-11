@@ -4,7 +4,7 @@
     width: 100%;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    z-index: 110;
     cursor: default;
 }
 .projectDetails__Wrapper {
@@ -24,7 +24,83 @@
     border-radius: 2rem;
     border-color: #32d08c;
     color: #fff;
-    z-index: 2;
+    z-index: 111;
+    overflow: visible;
+}
+.projectDetails__Body {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 1.5rem;
+}
+.projectDetails__Gallery {
+    position: relative;
+}
+.projectDetails__Arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-top: -2.2rem;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #32d08c;
+    font-size: 3.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.projectDetails__Arrow:hover {
+    color: #fff;
+    background: rgba(50, 208, 140, 0.35);
+}
+.projectDetails__Arrow_Prev {
+    left: 1rem;
+}
+.projectDetails__Arrow_Next {
+    right: 1rem;
+}
+.projectDetails__Caption {
+    text-align: center;
+    margin: 1rem 4rem 0 4rem;
+    color: #32d08c;
+    font-size: 1.8rem;
+}
+.projectDetails__Thumbs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.2rem 2rem 0 2rem;
+    overflow-x: auto;
+}
+.projectDetails__Thumb {
+    flex: 0 0 8rem;
+    width: 8rem;
+    padding: 0;
+    border: 0.2rem solid transparent;
+    border-radius: 0.5rem;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.55;
+}
+.projectDetails__Thumb:hover,
+.projectDetails__Thumb_Active {
+    opacity: 1;
+    border-color: #32d08c;
+}
+.projectDetails__ThumbImg {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+.projectDetails__Contribution {
+    margin: 1rem 4rem;
+}
+.projectDetails__Contribution span {
+    color: #32d08c;
 }
 .projectDetails__List {
     list-style: decimal;
@@ -35,11 +111,16 @@
     flex-wrap: wrap;
 }
 .projectDetails__List_TwoRows > .projectDetails__Item {
-    margin: 1rem 4rem;
+    margin: 1rem 2rem;
+    flex: 1 1 calc(50% - 4rem);
+    box-sizing: border-box;
 }
 .projectDetails__Image {
     display: block;
     width: 100%;
+    max-height: 46vh;
+    object-fit: contain;
+    object-position: top;
     margin: 0 auto;
     transition-property: all;
     transition-duration: 500ms;
@@ -107,7 +188,11 @@
 
 @media (max-width: 576px) {
     .projectDetails__Wrapper {
-        top: 15vh;
+        top: 8vh;
+        width: 86vw;
+    }
+    .projectDetails__Body {
+        max-height: 84vh;
     }
     .github__Link {
         display: none;
@@ -116,7 +201,36 @@
         display: inline-block;
     }
     .projectDetails__Close {
-        right: -3rem;
+        top: 0.2rem;
+        right: 1rem;
+        font-size: 3.4rem;
+        z-index: 5;
+    }
+    .projectDetails__Caption,
+    .project__Techs,
+    .projectDetails__Contribution,
+    .projectDetails__Item,
+    .projectDetails__List_TwoRows > .projectDetails__Item,
+    .projectDetails__Actions {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .projectDetails__Thumb {
+        flex-basis: 6.4rem;
+        width: 6.4rem;
+    }
+    .projectDetails__Arrow {
+        width: 3.6rem;
+        height: 3.6rem;
+        margin-top: -1.8rem;
+        font-size: 2.8rem;
+    }
+    .projectDetails__List_TwoRows {
+        display: block;
+    }
+    .projectDetails__List_TwoRows > .projectDetails__Item {
+        flex: none;
+        margin: 2rem;
     }
 }
 @media (max-height: 1000px) {
@@ -127,5 +241,8 @@
 @media (max-height: 800px) {
     .projectDetails__Wrapper {
         position: absolute;
+    }
+    .projectDetails__Body {
+        max-height: none;
     }
 }

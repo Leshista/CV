@@ -95,9 +95,13 @@ const textEn = {
     mentoring: 'Mentoring',
 
     // Portfolio Section
+    commercialProjects: 'Commercial Projects',
+    commercialProjectsIntro:
+        'Throughout my professional career, I have contributed to numerous web projects. These are selected examples showcasing different tasks and development approaches. Most commercial work is not publicly shared due to confidentiality restrictions.',
     myProjects: 'My Projects',
     studyProjects: 'Learning projects',
     techsUsed: 'Tech used',
+    myContribution: 'My role',
     openProject: 'Open project',
     sourceCode: 'Source code',
 
@@ -203,9 +207,13 @@ const textRu = {
     mentoring: 'Наставничество',
 
     // Секция "Портфолио"
+    commercialProjects: 'Коммерческие проекты',
+    commercialProjectsIntro:
+        'За годы коммерческой работы я участвовал в создании большого количества веб-проектов. Здесь представлены отдельные примеры, демонстрирующие разные задачи и подходы к разработке. Большинство работ не публикуется из-за ограничений конфиденциальности.',
     myProjects: 'Мои проекты',
     studyProjects: 'Учебные проекты',
     techsUsed: 'Технологии',
+    myContribution: 'Мой вклад',
     openProject: 'Открыть проект',
     sourceCode: 'Исходный код',
 

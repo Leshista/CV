@@ -8,8 +8,58 @@ import LoremIpsumImage from './images/LoremIpsum.jpg';
 import CNNImage from './images/CNN.jpg';
 import IndexPageImage from './images/IndexPage.jpg';
 import QuestImage from './images/Quest.jpg';
+import GameHomeImage from './images/commercial-game-home.jpg';
+import GameCatalogImage from './images/commercial-game-catalog.jpg';
+import GameAccountImage from './images/commercial-game-account.jpg';
+import GameRegisterImage from './images/commercial-game-register.jpg';
+import LandingDaImage from './images/commercial-landing-da.jpg';
+import LandingFrImage from './images/commercial-landing-fr.jpg';
 
 const projectsEn = {
+    GamePlatform: {
+        title: 'Interactive Gaming Web Platform (2026)',
+        image: GameHomeImage,
+        images: [
+            { src: GameHomeImage, caption: 'Home' },
+            { src: GameCatalogImage, caption: 'Catalog' },
+            { src: GameAccountImage, caption: 'Account' },
+            { src: GameRegisterImage, caption: 'Registration' },
+        ],
+        subtitle:
+            'A multi-page project with a catalog of 256 games, search, filtering, sorting, a user account, favorites, registration and a loyalty system.',
+        techs: 'HTML, CSS, JavaScript, localStorage',
+        contribution:
+            'Writing tasks for Grok, directing generation, testing and quality control. The code was AI-generated.',
+        features: [
+            'Multi-page structure: home, game catalog, user account and registration',
+            'Catalog of 256 games',
+            'Search, filtering and sorting across the catalog',
+            'User account with loyalty points, tier progress, favorites and play stats',
+            'Registration form with client-side checks',
+            'User and UI state persisted in localStorage',
+        ],
+    },
+    AdLandings: {
+        title: 'Development and Adaptation of Advertising Web Pages (2025)',
+        image: LandingDaImage,
+        images: [
+            { src: LandingDaImage, caption: 'Danish version' },
+            { src: LandingFrImage, caption: 'French version' },
+        ],
+        subtitle:
+            'Two localized versions of the same commercial website for the Danish and French markets.',
+        techs: 'HTML, CSS, JavaScript, localStorage',
+        contribution:
+            'Hand-coded layout, design and content adaptation, responsiveness, basic interactivity (age-gate, cookie banner).',
+        features: [
+            'Two language versions of one commercial site: Danish and French',
+            'Hand-coded semantic layout from a shared design',
+            'Market-specific content and visual adaptation',
+            'Responsive layout for desktop and mobile',
+            'Age-gate modal (18+)',
+            'Cookie banner with the choice stored in localStorage',
+        ],
+    },
     AtWork: {
         title: 'AT-WORK SPA',
         image: AtWorkImage,
@@ -133,6 +183,50 @@ const projectsEn = {
 };
 
 const projectsRu = {
+    GamePlatform: {
+        title: 'Интерактивная игровая веб-платформа (2026)',
+        image: GameHomeImage,
+        images: [
+            { src: GameHomeImage, caption: 'Главная' },
+            { src: GameCatalogImage, caption: 'Каталог' },
+            { src: GameAccountImage, caption: 'Кабинет' },
+            { src: GameRegisterImage, caption: 'Регистрация' },
+        ],
+        subtitle:
+            'Многостраничный проект с каталогом 256 игр, поиском, фильтрацией, сортировкой, личным кабинетом, избранным, регистрацией и системой лояльности.',
+        techs: 'HTML, CSS, JavaScript, localStorage',
+        contribution:
+            'Постановка задач для Grok, управление генерацией, тестирование и контроль качества. Код сгенерирован ИИ.',
+        features: [
+            'Многостраничная структура: главная, каталог игр, личный кабинет и регистрация',
+            'Каталог из 256 игр',
+            'Поиск, фильтрация и сортировка по каталогу',
+            'Личный кабинет: баллы лояльности, уровень, избранное и статистика',
+            'Форма регистрации с клиентской проверкой',
+            'Состояние пользователя и интерфейса в localStorage',
+        ],
+    },
+    AdLandings: {
+        title: 'Разработка и адаптация рекламных веб-страниц (2025)',
+        image: LandingDaImage,
+        images: [
+            { src: LandingDaImage, caption: 'Датская версия' },
+            { src: LandingFrImage, caption: 'Французская версия' },
+        ],
+        subtitle:
+            'Две локализованные версии одного коммерческого сайта для датского и французского рынков.',
+        techs: 'HTML, CSS, JavaScript, localStorage',
+        contribution:
+            'Ручная вёрстка, адаптация дизайна и контента, адаптивность, базовая интерактивность (возрастное окно, cookie-баннер).',
+        features: [
+            'Две языковые версии одного коммерческого сайта: датская и французская',
+            'Ручная семантическая вёрстка по общему макету',
+            'Адаптация дизайна и контента под рынок',
+            'Адаптив для десктопа и мобильных',
+            'Возрастное окно 18+',
+            'Cookie-баннер с сохранением выбора в localStorage',
+        ],
+    },
     AtWork: {
         title: 'AT-WORK SPA',
         image: AtWorkImage,

@@ -16,6 +16,21 @@
     margin: 3rem 0;
     font-weight: bold;
 }
+.portfolio__Intro {
+    max-width: 90rem;
+    margin: 0 auto 4rem auto;
+    padding: 0 3rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.project__List_Commercial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+    margin-bottom: 4rem;
+}
 .project__List {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -36,18 +51,28 @@
 
 @media (max-width: 992px) {
     .project__List,
-    .project__List_Study {
+    .project__List_Study,
+    .project__List_Commercial {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 666px) {
     .project__List,
-    .project__List_Study {
+    .project__List_Study,
+    .project__List_Commercial {
         grid-template-columns: 1fr;
     }
     .portfolio__StudyTitle {
         font-size: 2.8rem;
         margin-top: 4rem;
+    }
+    .portfolio__Title {
+        font-size: 3.4rem;
+    }
+    .portfolio__Intro {
+        font-size: 1.7rem;
+        padding: 0 2rem;
+        margin-bottom: 2.5rem;
     }
 }

@@ -9,7 +9,13 @@ const Portfolio = () => {
         <>
             <article className={classes.portfolio__Wrapper}>
                 <Divider dividerType='upsideDown' dividerNumber={2} />
-                <h1 className={classes.portfolio__Title}>{ textProvider('myProjects') }</h1>
+                <h1 className={classes.portfolio__Title}>{ textProvider('commercialProjects') }</h1>
+                <p className={classes.portfolio__Intro}>{ textProvider('commercialProjectsIntro') }</p>
+                <section className={classes.project__List_Commercial}>
+                    <ProjectItem projectId={'GamePlatform'} />
+                    <ProjectItem projectId={'AdLandings'} />
+                </section>
+                <h2 className={classes.portfolio__Title}>{ textProvider('myProjects') }</h2>
                 <section className={classes.project__List}>
                     <ProjectItem projectId={'AtWork'} />
                     <ProjectItem projectId={'CV'} />
